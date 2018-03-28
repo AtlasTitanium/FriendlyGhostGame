@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: cf3990f0753bd4b45bb7ecb5ab401602
+timeCreated: 1522175923
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: RoughTypewriter
+  fontNames:
+  - RoughTypewriter
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 89606b52f174875419b4c373f0658ec0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
