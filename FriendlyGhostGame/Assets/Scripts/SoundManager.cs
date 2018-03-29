@@ -15,12 +15,13 @@ using System.Collections;
         public AudioSource[] soundeffectSources;//Drag a reference to the audio source which will play the sound effects. 
         public AudioClip[] Audioclips;  
         public Collider[] AudioTrigger; 
-
+        
+        /*
         void Awake ()
         {
             DontDestroyOnLoad (gameObject);
         }
-        
+        */
         void Update()
         {
             if(playerisinside){

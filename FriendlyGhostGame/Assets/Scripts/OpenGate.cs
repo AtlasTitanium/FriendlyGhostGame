@@ -9,10 +9,14 @@ public class OpenGate : MonoBehaviour {
 	public Animator animatorRightDoornowere;
 
 	public AudioSource fenceaudio;
+	private bool onlyonce = true;
 
 	void OnTriggerEnter(Collider other){
 		if(other == triggerOpen){
-			fenceaudio.Play();
+			if(onlyonce){
+				fenceaudio.Play();
+				onlyonce = false;
+			}
 			animatorLeftDoornowere.Play("GateOpen2");
 			animatorRightDoornowere.Play("GateOpen");
 		}

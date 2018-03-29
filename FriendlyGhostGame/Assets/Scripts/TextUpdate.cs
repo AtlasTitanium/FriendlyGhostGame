@@ -17,6 +17,8 @@ public class TextUpdate : MonoBehaviour {
 		char[] characters = inputText.text.ToCharArray();
 		if(go){
 			if (i == (characters.Length - 1)){
+				boi = false;
+				go = false;
 				button.SetActive(true);
 			}
 			i++;

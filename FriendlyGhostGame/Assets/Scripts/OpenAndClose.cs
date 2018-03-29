@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenAndClose : MonoBehaviour {
+	public GameObject managerOfSound;
 	public GameObject ThePlayer;
 	public GameObject thePlayerMusic;
 	public Collider triggerOpen;
@@ -38,6 +39,7 @@ public class OpenAndClose : MonoBehaviour {
 			if(!playedClose){
 				ShutDoor.Play();
 				playedClose = true;
+				managerOfSound.GetComponent<SoundManager>().playerisinside = true;
 			}
 			animatorLeftDoornowere.Play("DoorClose");
 			animatorRightDoornowere.Play("DoorClose2");
