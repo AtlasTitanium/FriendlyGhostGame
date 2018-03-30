@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickupPickup : MonoBehaviour {
+	public GameObject UVImage;
 	public GameObject Inventory;
-
 	public GameObject Pickups;
 
 	public GameObject fpsCam;
@@ -69,6 +70,7 @@ public class PickupPickup : MonoBehaviour {
 				//Debug.Log(Pickups[i].transform.position);
 				//Debug.Log("move");
 				moveItem = true;
+				UVImage.GetComponent<Image>().color = Pickups.GetComponent<Renderer>().material.color;
 			}
 		}
 
@@ -88,6 +90,7 @@ public class PickupPickup : MonoBehaviour {
 		} else{
 			CurrentGhost = Ghosts[amout];
 		}
+		UVImage.GetComponent<Image>().color = new Color(0,0,0,0);
 		Inventory.tag = "Finish";
 		Inventory = null;
 		Pickups = GameObject.FindWithTag("PickupObject");

@@ -15,6 +15,8 @@ using System.Collections;
         public AudioSource[] soundeffectSources;//Drag a reference to the audio source which will play the sound effects. 
         public AudioClip[] Audioclips;  
         public Collider[] AudioTrigger; 
+
+        public AudioClip endmusic;
         
         /*
         void Awake ()
@@ -32,5 +34,14 @@ using System.Collections;
                 musicSource.Play();
                 }
             }
+        }
+
+        public void PlayEnd(){
+            playerisinside = false;
+            musicSource.Stop();
+            musicSource.clip = endmusic;
+            musicSource.loop = true;
+            musicSource.volume = 0.5f;
+            musicSource.Play();
         }
     }

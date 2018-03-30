@@ -25,6 +25,7 @@ public class MoveAwayFromPlayer : MonoBehaviour {
 	 private bool TAGO = true;
 
 	 public GameObject nextGhost;
+	 
 
 	void Start(){
 		hight = transform.position.y;

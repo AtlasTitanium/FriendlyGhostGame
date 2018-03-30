@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerGhostInteraction : MonoBehaviour {
+	public GameObject endDoor;
 	public GameObject TheGhost;
 	public GameObject TheGhostwords;
 	public GameObject TheGhostarea;
@@ -49,6 +50,7 @@ public class PlayerGhostInteraction : MonoBehaviour {
 	}
 
 	public void NoMoreAnrgyGhosts(){
+		ThePlayer.transform.parent.GetComponent<OpenAndClose>().finishedGame = true;
 		Debug.Log("YAY!!!! You WON");
 	}
 }
