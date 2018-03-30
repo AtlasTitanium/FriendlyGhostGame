@@ -76,7 +76,7 @@ public class OpenAndClose : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other == triggerClose){
-			InfoText.text = "Find the Ghosts their desired objects \n \n |Q| to get ghostcamera \n |Tab| to get flashlight";
+			InfoText.text = "Find the Ghosts their desired objects \n \n |Q| to get ghostcamera \n |Tab| to get flashlight \n |Right-Click| to interact with ghosts \n and highlighted objects";
 			StartCoroutine(WaitThisLong(6));
 			ThePlayer.GetComponent<Tablet>().enabled = true;
 			thePlayerMusic.GetComponent<SoundManager>().playerisinside = true;
